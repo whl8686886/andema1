@@ -1,7 +1,7 @@
 	var _head=document.getElementById("header1");
 			var Left=850;
-			var timer;
-			window.onload=function(){
+			var headertimer;
+			
 				function auto(){
 					Left--;
 					if(Left<20){
@@ -9,8 +9,8 @@
 					}
 					_head.style.left=Left+"px";
 				}
-				timer=setInterval(auto,20);
-			}
+				headertimer=setInterval(auto,20);
+			
 	
 		document.getElementsByClassName("ul1-li1")[0].onmouseover=function(){
 			document.getElementsByClassName("a1")[0].style.color="red";
@@ -140,9 +140,6 @@
 	}
 
 
-function $(id){
-	return document.getElementById(id);
-}
 "use strict";
 
 let boxWidth;
@@ -199,8 +196,8 @@ function fadeInOutInit(){
 	//1、恢复滑入图片left的初始值为盒子的宽度
 	currLeft = boxWidth;
 	//2、把将要滑入的图片的left定位到盒子的宽度
-	//$("box").children[currOutOrd-1].style.left = "0px";
-	$("banner").children[currInOrd-1].style.left = currLeft+"px";
+	//document.getElementById("box").children[currOutOrd-1].style.left = "0px";
+	document.getElementById("banner").children[currInOrd-1].style.left = currLeft+"px";
 }
 
 //滑入滑出
@@ -208,7 +205,7 @@ function fadeInOutInit(){
 function fadeInOut(){
 	//1、改变left的值
 	currLeft=parseInt(currLeft-boxWidth/(huaTime/huaSpeed));
-	console.log(currLeft);
+	//console.log(currLeft);
 	//2、越界判断
 	if(currLeft<=0){//切换完成（滑入滑出）
 		currLeft = 0;
@@ -216,16 +213,16 @@ function fadeInOut(){
 		//return;
 	}
 		
-	$("img0"+currOutOrd).style.left = (currLeft-boxWidth)+"px"; 
-	$("img0"+currInOrd).style.left = currLeft+"px";
+	document.getElementById("img0"+currOutOrd).style.left = (currLeft-boxWidth)+"px"; 
+	document.getElementById("img0"+currInOrd).style.left = currLeft+"px";
 	
 }
 
 function changeBtnBgColor(ord){
 	for(var i=0;i<2;i++){
-		$("ulBtn").children[i].style.backgroundColor="white";	
+		document.getElementById("ulBtn").children[i].style.backgroundColor="white";	
 	}
-	$("ulBtn").children[ord-1].style.backgroundColor="gray";	
+	document.getElementById("ulBtn").children[ord-1].style.backgroundColor="gray";	
 }
 
 
@@ -271,11 +268,11 @@ function initData(){
 
 function initUI(){
 	for(let i=0;i<2;i++){
-		$("img0"+(i+1)).style.left = "-3500px";
+		document.getElementById("img0"+(i+1)).style.left = "-3500px";
 	}	
-	$("img01").style.left = "0px";
+	document.getElementById("img01").style.left = "0px";
 
-	$("ulBtn").children[0].style.backgroundColor="gray";	
+	document.getElementById("ulBtn").children[0].style.backgroundColor="gray";	
 }
 
 
@@ -283,14 +280,14 @@ window.onload = function(){
 	init();
 	bannerTimer=setInterval(goStep,3000);
 	
-	$("banner").onmouseenter=function(){
+	document.getElementById("banner").onmouseenter=function(){
 		window.clearInterval(bannerTimer);
 	}
-	$("banner").onmouseleave=function(){
+	document.getElementById("banner").onmouseleave=function(){
 		bannerTimer=setInterval(goStep,3000);
 	}
 	
-	let ul_li = $("ulBtn").children;
+	let ul_li = document.getElementById("ulBtn").children;
 	for(let i=0;i<ul_li.length;i++){
 		ul_li[i].ord = i;//ord是li的自定义属性。
 		ul_li[i].onmousedown = function(){
