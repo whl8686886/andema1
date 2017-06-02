@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0; }
@@ -102,7 +103,8 @@ html, body {
 #nav {
   width: 1340px;
   height: 62px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 73px; }
   #nav .img {
     width: 61px;
     height: 62px;
@@ -897,407 +899,152 @@ html, body {
       font-size: 18px;
       color: black; }
 
-/*------------------banner----------------------------------*/
-#banner {
-  width: 1340px;
-  height: 590px;
+/*----------------登录---------------------------------*/
+#reg {
+  width: 872px;
+  height: 667px;
   margin: 0 auto;
-  border: 1px solid gray;
-  position: relative;
-  overflow: hidden; }
-  #banner img {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 1340px;
-    height: 590px; }
-  #banner em {
-    width: 140px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    position: absolute;
-    border: 1px solid white;
-    color: white;
-    left: 515px;
-    top: 430px;
-    z-index: 10;
-    cursor: pointer; }
-  #banner span {
-    width: 140px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    position: absolute;
-    border: 1px solid white;
-    color: white;
-    left: 685px;
-    top: 430px;
-    z-index: 10;
-    cursor: pointer; }
-  #banner #ulBtn {
-    position: absolute;
-    left: 658px;
-    top: 545px; }
-    #banner #ulBtn li {
-      float: left;
-      margin-left: 20px;
-      width: 10px;
-      height: 10px;
-      background-color: white;
-      border-radius: 50%;
-      text-align: center; }
-
-#banner #banner2 em:hover {
-  background: black; }
-
-#banner #banner2 span:hover {
-  background: black; }
-
-/*-------------sect-----------------*/
-#sec {
-  width: 1340px;
-  height: 280px;
-  margin: 0 auto; }
-  #sec p {
-    text-align: center;
-    font-size: 24px;
-    margin-top: 45px; }
-  #sec h2 {
-    text-align: center;
-    font-size: 48px; }
-  #sec ul {
-    margin-top: 45px;
-    margin-left: 265px; }
-    #sec ul li:first-child {
-      float: left;
-      width: 170px;
-      height: 60px;
-      border: 1px solid black;
-      text-align: center;
-      line-height: 60px;
-      margin-right: 48px; }
-      #sec ul li:first-child a {
-        font-size: 20px;
-        color: black; }
-    #sec ul li:nth-child(2) {
-      float: left;
-      width: 170px;
-      height: 60px;
-      border: 1px solid black;
-      text-align: center;
-      line-height: 60px;
-      margin-right: 48px; }
-      #sec ul li:nth-child(2) a {
-        font-size: 20px;
-        color: black; }
-    #sec ul li:nth-child(3) {
-      float: left;
-      width: 170px;
-      height: 60px;
-      border: 1px solid black;
-      text-align: center;
-      line-height: 60px;
-      margin-right: 48px; }
-      #sec ul li:nth-child(3) a {
-        font-size: 20px;
-        color: black; }
-    #sec ul li:nth-child(4) {
-      float: left;
-      width: 170px;
-      height: 60px;
-      border: 1px solid black;
-      text-align: center;
-      line-height: 60px; }
-      #sec ul li:nth-child(4) a {
-        font-size: 20px;
-        color: black; }
-
-#sec li:nth-child(1):hover {
-  background: black; }
-  #sec li:nth-child(1):hover a {
-    color: white; }
-
-#sec li:nth-child(2):hover {
-  background: black; }
-  #sec li:nth-child(2):hover a {
-    color: white; }
-
-#sec li:nth-child(3):hover {
-  background: black; }
-  #sec li:nth-child(3):hover a {
-    color: white; }
-
-#sec li:nth-child(4):hover {
-  background: black; }
-  #sec li:nth-child(4):hover a {
-    color: white; }
-
-/*-----------------active----------------------------*/
-#active {
-  width: 1340px;
-  height: 572px;
-  margin: 0 auto; }
-  #active li {
-    float: left;
-    width: 670px;
-    height: 572px;
-    position: relative; }
-    #active li img {
-      width: 100%;
-      height: 442px; }
-    #active li h4 {
-      text-align: center;
-      font-size: 28px;
-      margin-top: 25px; }
-    #active li P {
-      margin-top: 10px;
-      text-align: center;
-      font-size: 16px;
-      color: grey; }
-    #active li span {
-      display: block;
-      width: 100px;
-      height: 30px;
-      border: 1px solid white;
-      text-align: center;
-      line-height: 30px;
-      position: absolute;
-      left: 285px;
-      top: 200px;
-      color: white;
-      display: none; }
-
-#active li img:hover {
-  background: black;
-  opacity: 0.8; }
-
-#active li:nth-child(1):hover span {
-  display: block; }
-
-#active li:nth-child(2):hover span {
-  display: block; }
-
-#active li span:hover {
-  background: white;
-  color: black; }
-
-/*---------------------main------------------------*/
-#main {
-  width: 1340px;
-  height: 545px;
-  margin: 0 auto;
-  position: relative; }
-  #main img {
-    width: 1340px;
-    height: 435px; }
-  #main .backS {
+  margin-top: 74px; }
+  #reg h4 {
+    width: 100%;
+    height: 75px;
+    border: 1px solid red;
+    font-size: 28px; }
+  #reg span {
     display: block;
-    width: 1340px;
-    height: 435px;
-    background: black;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0.4;
-    display: none; }
-  #main p {
-    font-weight: bold;
-    margin-top: 25px;
-    text-align: center;
-    font-size: 28px;
-    color: black; }
-  #main span {
-    display: block;
-    width: 200px;
-    height: 50px;
-    border: 1px solid white;
-    text-align: center;
-    line-height: 50px;
-    position: absolute;
-    left: 570px;
-    top: 300px;
-    color: white;
-    display: none; }
-
-#main:hover span {
-  display: block; }
-
-#main img:hover {
-  background: black;
-  opacity: 0.5; }
-
-#main span:hover {
-  background: white;
-  color: black; }
-
-#main:hover .backS {
-  display: block; }
-
-/*------------main2----------------------------*/
-#main2 {
-  width: 1340px;
-  height: 365px;
-  margin: 0 auto; }
-  #main2 .main-li1 {
-    width: 435px;
-    height: 365px;
-    float: left;
-    margin-right: 17px;
-    position: relative; }
-    #main2 .main-li1 img {
-      width: 435px;
-      height: 288px; }
-    #main2 .main-li1 .backS {
-      display: block;
-      width: 435px;
-      height: 288px;
-      background: black;
-      position: absolute;
-      left: 0;
-      top: 0;
-      opacity: 0.4;
-      display: none; }
-    #main2 .main-li1 h3 {
-      margin-top: 10px;
-      text-align: center;
-      font-size: 30px; }
-    #main2 .main-li1 p {
-      text-align: center;
-      font-size: 18px;
-      color: gray; }
-    #main2 .main-li1 span {
-      display: block;
-      width: 100px;
-      height: 50px;
-      border: 1px solid white;
-      text-align: center;
-      line-height: 50px;
-      position: absolute;
-      left: 167px;
-      top: 155px;
-      color: white;
-      display: none; }
-  #main2 .main-li2 {
-    width: 435px;
-    height: 365px;
+    font-size: 16px; }
+  #reg .reg-left {
+    width: 404px;
+    height: 603px;
     float: left;
     position: relative;
-    margin-right: 17px; }
-    #main2 .main-li2 img {
-      width: 435px;
-      height: 288px; }
-    #main2 .main-li2 .backS {
-      display: block;
-      width: 435px;
-      height: 288px;
-      background: black;
-      position: absolute;
-      left: 0;
-      top: 0;
-      opacity: 0.4;
-      display: none; }
-    #main2 .main-li2 h3 {
+    border: 1px solid red; }
+    #reg .reg-left #Npt1 {
+      width: 100%;
+      height: 50px;
       margin-top: 10px;
-      text-align: center;
-      font-size: 30px; }
-    #main2 .main-li2 p {
-      text-align: center;
-      font-size: 18px;
-      color: gray; }
-    #main2 .main-li2 span {
+      border: 1px solid gray; }
+    #reg .reg-left #em1 {
       display: block;
+      font-size: 12px;
+      color: red; }
+    #reg .reg-left #em2 {
+      display: block;
+      font-size: 12px;
+      color: red; }
+    #reg .reg-left #em3 {
+      display: block;
+      font-size: 12px;
+      color: red; }
+    #reg .reg-left #Npt2 {
+      width: 200px;
+      height: 50px;
+      border: 1px solid gray;
+      display: inline-block;
+      margin-top: 10px; }
+    #reg .reg-left #Npt3 {
       width: 100px;
       height: 50px;
-      border: 1px solid white;
-      text-align: center;
-      line-height: 50px;
-      position: absolute;
-      left: 167px;
-      top: 155px;
-      color: white;
-      display: none; }
-  #main2 .main-li3 {
-    width: 435px;
-    height: 365px;
-    float: left;
-    position: relative; }
-    #main2 .main-li3 img {
-      width: 435px;
-      height: 288px;
-      position: relative; }
-    #main2 .main-li3 .backS {
-      display: block;
-      width: 435px;
-      height: 288px;
-      background: black;
-      position: absolute;
-      left: 0;
-      top: 0;
-      opacity: 0.4;
-      display: none; }
-    #main2 .main-li3 h3 {
+      border: 1px solid gray;
       margin-top: 10px;
-      text-align: center;
-      font-size: 30px; }
-    #main2 .main-li3 p {
-      text-align: center;
-      font-size: 18px;
-      color: gray; }
-    #main2 .main-li3 span {
-      display: block;
-      width: 100px;
+      display: inline-block; }
+    #reg .reg-left a {
+      color: black;
+      text-decoration: underline; }
+    #reg .reg-left #Npt4 {
+      width: 100%;
       height: 50px;
-      border: 1px solid white;
+      margin-top: 10px;
+      border: 1px solid gray; }
+    #reg .reg-left #i1 {
+      display: inline-block;
+      float: left;
+      width: 195px;
+      height: 50px;
+      border: 1px solid gray;
       text-align: center;
       line-height: 50px;
+      font-size: 12px;
+      margin-right: 10px; }
+    #reg .reg-left #i2 {
+      display: inline-block;
+      float: left;
+      width: 195px;
+      height: 50px;
+      border: 1px solid gray;
+      text-align: center;
+      line-height: 50px;
+      font-size: 12px; }
+    #reg .reg-left #Npt5 {
+      width: 25px;
+      height: 25px;
+      display: inline-block; }
+    #reg .reg-left b {
+      margin-left: 15px;
+      font-size: 14px; }
+    #reg .reg-left #Npt6 {
+      width: 25px;
+      height: 25px; }
+    #reg .reg-left strong {
+      font-size: 12px;
+      float: left;
       position: absolute;
-      left: 167px;
-      top: 155px;
+      left: 40px;
+      top: 470px; }
+    #reg .reg-left #reg-p {
+      width: 100%;
+      height: 60px;
+      text-align: center;
+      line-height: 60px;
+      background: #ea212e;
+      font-size: 24px;
       color: white;
-      display: none; }
-
-#main2 .main-li1:hover .backS {
-  display: block; }
-
-#main2 .main-li1:hover span {
-  display: block; }
-
-#main2 .main-li1 img:hover {
-  background: black;
-  opacity: 0.5; }
-
-#main2 .main-li1 span:hover {
-  background: white;
-  color: black; }
-
-#main2 .main-li2:hover span {
-  display: block; }
-
-#main2 .main-li2 img:hover {
-  background: black;
-  opacity: 0.5; }
-
-#main2 .main-li2 span:hover {
-  background: white;
-  color: black; }
-
-#main2 .main-li2:hover .backS {
-  display: block; }
-
-#main2 .main-li3:hover .backS {
-  display: block; }
-
-#main2 .main-li3:hover span {
-  display: block; }
-
-#main2 .main-li3 img:hover {
-  background: black;
-  opacity: 0.5; }
-
-#main2 .main-li3 span:hover {
-  background: white;
-  color: black; }
+      margin-top: 55px; }
+  #reg #reg-right {
+    width: 400px;
+    height: 603px;
+    border: 1px solid red;
+    position: relative;
+    margin-left: 62px;
+    float: left; }
+    #reg #reg-right #Npt7 {
+      width: 100%;
+      height: 50px;
+      border: 1px solid gray;
+      margin-bottom: 30px; }
+    #reg #reg-right #Npt8 {
+      width: 300px;
+      height: 50px;
+      border: 1px solid gray;
+      margin-bottom: 30px;
+      display: inline-block; }
+    #reg #reg-right span {
+      display: block;
+      margin-bottom: 10px; }
+    #reg #reg-right .reg-i {
+      display: inline-block;
+      width: 95px;
+      height: 50px;
+      text-align: center;
+      line-height: 45px;
+      color: white;
+      background: gray; }
+    #reg #reg-right #Npt9 {
+      width: 100%;
+      height: 50px;
+      border: 1px solid gray;
+      margin-bottom: 30px; }
+    #reg #reg-right .em4 {
+      font-size: 16px;
+      position: absolute;
+      top: 565px; }
+    #reg #reg-right .a1 {
+      font-size: 16px;
+      position: absolute;
+      color: black;
+      text-decoration: underline;
+      left: 90px;
+      top: 565px; }
 
 /*---------------------main3----------------------------------*/
 #main3 {
@@ -1497,4 +1244,4 @@ html, body {
 #p1:hover .Img3 {
   display: block; }
 
-/*# sourceMappingURL=shouye.css.map */
+/*# sourceMappingURL=zhuceye.css.map */
